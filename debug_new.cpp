@@ -823,7 +823,8 @@ int check_leaks()
             fprintf(new_output_fp, "*** %d leaks found\n", leak_cnt);
         }
     }
-
+    fprintf(new_output_fp, "\nPRESS ANY KEY TO EXIT PROGRAM\n");
+    getchar();
     return leak_cnt;
 }
 
